@@ -4,6 +4,13 @@ contract Migrations {
   address public owner;
   uint public last_completed_migration;
 
+  //-----------------
+  //Additional Fields For Data Payload
+  string memberName;
+  string memberEmail;
+  uint memberID; 
+  //-----------------
+
   modifier restricted() {
     if (msg.sender == owner) _;
   }
