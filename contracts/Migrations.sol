@@ -8,7 +8,6 @@ contract Migrations {
   //Additional Fields For Data Payload
   string memberName;
   string memberEmail;
-  uint memberID; 
   //-----------------
 
   modifier restricted() {
